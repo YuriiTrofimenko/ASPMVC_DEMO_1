@@ -19,6 +19,18 @@
         <li>Name: @Model.Name</li>
         <li>Price: @Model.Price</li>
     </ul>
+    @using (Html.BeginForm("Add", "Default", FormMethod.Post))
+    {
+        <div>
+            <input type="text" name="Name" placeholder="Product Name" required>
+        </div>
+        <div>
+            <input type="text" name="Price" placeholder="Product Price" required pattern="^[0-9\,]{1,10}$">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    }
 </div>
 </body>
 </html>

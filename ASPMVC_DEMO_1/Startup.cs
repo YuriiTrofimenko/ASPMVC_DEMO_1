@@ -54,6 +54,10 @@ namespace ASPMVC_DEMO_1
                     pattern: "{controller=Default}/{action=Index}/{id?}");
                 
                 endpoints.MapControllerRoute(
+                    name: "add",
+                    pattern: "{controller=Default}/{action=Add}");
+                
+                endpoints.MapControllerRoute(
                     name: "about",
                     pattern: "{controller=About}/{action=Index}/{id?}");
             });
