@@ -5,9 +5,9 @@ namespace ASPMVC_DEMO_1.Controllers
     public class Default : Controller
     {
         // GET
-        public string Index()
+        public ViewResult Index()
         {
-            return "Hello ASP.NET MVC!";
+            return View();
         }
     }
 }
