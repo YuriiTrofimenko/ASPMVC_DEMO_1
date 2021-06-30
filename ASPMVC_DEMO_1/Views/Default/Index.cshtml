@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ASPMVC_DEMO_1.Models.Product
+@{
     Layout = null;
 }
 
@@ -12,6 +13,12 @@
 <div>
     <h1>@ViewBag.Title</h1>
     <div>@ViewBag.Content</div>
+    <h2>Demo product:</h2>
+    <ul>
+        <li>Id: @Model.Id</li>
+        <li>Name: @Model.Name</li>
+        <li>Price: @Model.Price</li>
+    </ul>
 </div>
 </body>
 </html>
